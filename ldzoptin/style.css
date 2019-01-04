@@ -1,0 +1,528 @@
+/*
+Theme Name: Leadzy Opt In
+Theme URI: http://leadzy.net
+Description: Leadzy Opt In and Landing Page Theme
+Author: Rhonda Clark
+Author URI: http://www.letstalkproductions.com
+Description: A simple, straightforward Business Landing Page theme for small business owners to build a list of clients using email opt in. Optimized for mobile. Complete with Optin form, Google Map, Contact Form, Hero section for banner or slider, feature boxes section and more!
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, two-columns, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: ldzopt
+
+*/
+
+@import url('css/custom.css'); 
+@import url('css/bootstrap.min.css');
+
+
+/* WORDPRESS REQUIRED CLASSES */
+.sticky {}
+.gallery-caption {}
+.bypostauthor{}
+
+.alignleft, img.alignleft {
+	margin-right: 1.5em;
+	display: inline;
+	float: left;
+}
+.alignright, img.alignright {
+	margin-left: 1.5em;
+	display: inline;
+	float: right;
+}
+
+.aligncenter, img.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	clear: both;
+}
+
+.wp-caption {
+	margin-bottom: 1.5em;
+	text-align: center;
+	padding-top: 5px;
+}
+.wp-caption img {
+	border: 0 none;
+	padding: 0;
+	margin: 0;
+}
+.wp-caption p.wp-caption-text {
+	line-height: 1.5;
+	font-size: 10px;
+	margin: 0;
+}
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+	
+.wp-smiley {
+	margin: 0 !important;
+	max-height: 1em;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+        white-space: nowrap;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* WP Calendar */
+#wp-calendar { width: 100%; font-size: 11px; margin: 20px auto;}
+#wp-calendar thead th { background: #f5f5f5; border: 1px solid #ddd; border-top: none; font-size: 11px; }
+#wp-calendar tbody td { text-align: center; border: 1px solid #ddd; line-height: 2.5em; transition: background 0.15s ease; -webkit-transition: background 0.15s ease; -o-transition: background 0.15s ease; -moz-transition: background 0.15s ease; }
+#wp-calendar tbody td:hover { background: #f1f1f1; color: #333; }
+#wp-calendar tbody td a { display: block; text-decoration: none; background: #444444; color: #fff; }
+#wp-calendar tbody td:hover a { background: #4d4d4d; color: #fff; }
+#wp-calendar tfoot td { padding-top: 1px; padding: 4px; }
+#wp-calendar caption { cursor: pointer; font-size: 13px; text-transform: uppercase; margin: 0; padding: 12px; outline: 0 none !important; background: #444444; color: #fff; }
+#wp-calendar tbody a { display: block; text-decoration: underline; }
+#wp-calendar th { text-align: center; border: 1px solid transparent; border-top: none; padding: 7px 0; color: #a7a7a7; }
+#footer #wp-calendar thead th { background: #222 }
+#footer #wp-calendar tbody td { border-color: #222 }
+
+
+
+
+/* HEADER & NAVBAR */
+
+nav li a{
+	margin-top: 5px;
+	color: #fff!important;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight:400;
+	letter-spacing: 1px;
+	padding-top: 15px!important;
+	padding-bottom: 15px!important;
+	line-height: 20px!important;
+}
+nav li a:hover {
+	color: #008000!important;
+	background: rgba(0,0,0,0.3)!important;
+	transition: ease .5s;
+}
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+	/* Current Nav Link */
+	color: #008000!important;
+	background: rgba(0,0,0,0.5)!important;
+}
+
+ 
+.dropdown-menu>.active>a {
+	/* Removes automatic highlighting of current menu item */
+	background: rgba(0,0,0,0.3)!important; 
+}
+
+
+.navbar.navbar-default.navbar-fixed-top{
+	background: rgba(0,0,0,0.7);
+	height: 60px!important;
+	box-shadow: 3px 2px 25px rgba(0,0,0,0.5);
+	border-bottom: 0;
+}
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a{
+	background: rgba(0,0,0,0.2)!important;
+}
+
+
+.navbar-toggle:hover {
+	background: #555!important;
+	transition: ease .5s;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+	background-color: transparent;
+}
+
+ul.dropdown-menu {
+	background: rgba(0,0,0,0.7);
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	background: rgba(51,51,51,0.92);
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background: rgba(51,51,51,0.92);
+}
+
+div.nav.navbar-nav.navbar-right>ul>li {
+	display: inline;
+	
+}
+.current-menu-item > a {
+	background: #000;
+}
+
+a.navbar-brand {
+	margin-top: -10px;
+}
+/* END NAVBAR */
+
+
+
+
+
+/* GENERAL STYLES */
+li {
+	font-size: 17px;
+}
+
+article {
+	margin-bottom: 50px;
+	min-height: 500px;
+}
+article p {
+	font-size: 17px;
+}
+.blog-header {
+	margin-top: -20px;
+	position: relative;
+	background: #777;
+	padding: 15px;
+	min-height: 100px;
+}
+#pageban{
+	margin-left: 0;
+	padding-left: 0;
+}
+.page-title {
+	margin-left:0;
+	padding: 0;
+	color: #aaa;
+}
+
+/* END GENERAL STYLES  */
+
+
+/* OPT IN PAGE STYLES  */
+section#content{
+	background: #f1f1f1;
+	margin-top: -50px;/*This creates a gap*/
+	padding-top: 50px;
+}
+
+
+
+h1 {
+	font-size: 50px;
+	line-height: 60px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.fa {
+	color: green;
+}
+
+img#lady.img-responsive{
+	width: 100%;
+	
+}
+img#offerimg {
+		display: none;
+}
+
+.plead {
+	font-size: 24px;
+	font-weight: 500;
+	color: #bbb;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.sub {
+	font-size: 20px;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+}
+.ltgreenlead {
+	text-transform: uppercase;
+	color: rgb(115, 182, 90);
+	font-weight: bold;	
+}
+
+.btngreen {
+	margin: 20px auto;
+	color: #fff;
+	font-size: 24px;
+	padding: 20px;
+	border-radius: 40px;
+	-o-border-radius: 40px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	background: green;
+	width: 90%;
+}
+.btngreen:hover {
+	color: #fff;
+	background: rgb(115, 182, 90);
+	transition: 1s;
+}
+
+
+.btnblue {
+	margin: 10px auto;
+	color: #fff;
+	font-size: 24px;
+	padding: 15px;
+	border-radius: 30px;
+	-o-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	background: #007cc2;
+	width: 80%;
+}
+.btnblue:hover {
+	color: #fff;
+	background: rgb(115, 182, 90);
+	transition: 1s;
+}
+
+
+#hereiswhat {
+	box-sizing: border-box; 
+	color: rgb(136, 136, 136); 
+	font-family: Montserrat, Helvetica, sans-serif; 
+	font-size: 20px; 
+	letter-spacing: normal; 
+	margin: 40px 0;
+	text-align: center;
+}
+#showyou {
+	color: rgb(47, 47, 47); 
+	font-family: Montserrat, Helvetica, sans-serif; 
+	font-size: 50px; 
+	letter-spacing: normal; 
+	text-align: center;
+	margin-top: -15px;
+}
+
+.boxtext {
+	color: rgb(136, 136, 136); 
+	font-family: Montserrat, Helvetica, sans-serif; 
+	font-size: 18px; 
+	letter-spacing: normal; 
+	text-align: center;
+}
+
+#footer {
+	background: rgb(33, 37, 41);
+	min-height: 100px;
+	color: #fff;
+	font-size: 16px;
+	padding-top: 50px;
+	padding-bottom: 15px;
+}
+.o4x {
+	font-size: 70px;
+	color: rgb(115, 182, 90);
+}
+.yes {
+	color: #fff;
+	font-size: 28px;
+	text-align: center;
+}
+
+.modal-title{
+	color: #007cc2;
+	font-weight: bold;
+	text-align: center;
+}
+h2#mailtagline{
+	font-size: 32px!important;
+}
+/*  END OPT IN PAGE STYLES  */
+
+
+.search-form-container {
+	margin-top: 50px!important;
+}
+form#websearch>input{
+	padding: 20px!important;
+	font-size: 20px!important;
+	border: 5px solid #aaa;
+	border-radius: 10px;
+	background: #f4f4f4;
+}
+form#websearch>input:hover{
+	background: #fff;
+}
+
+
+
+/*
+	************************************************************************************************
+	MEDIA QUERIES
+	************************************************************************************************
+*/
+
+/* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+		div.col-md-4.col-sm-6.center{
+			float: left;
+		}
+		h1 {
+			font-size: 45px!important;
+		}
+		.plead {
+    		font-size: 22px;
+		}
+    }
+
+    
+    
+/* Medium Devices, Desktops */
+@media screen and (max-width: 991px){
+	
+	div.col-md-4.col-sm-6.center{
+		height: 450px;
+	}
+	.btn-green,
+	.btn-white {
+		margin: 15px 10px;
+	}
+	.vids {
+		display: block;
+		margin-top: 30px;
+		margin-left: 5%;
+	}
+	
+	h1 {
+		font-size: 34px!important;
+		line-height: 40px;
+		letter-spacing: 1px;
+		margin-bottom: 20px;
+	}
+	.plead {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	.sub {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+	
+
+	.btngreen {
+		font-size: 20px;
+	}
+	
+}
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	/* CONTENT CAROUSEL */
+	#quote-carousel .carousel-indicators {
+    bottom: -20px !important;  
+	}
+	#quote-carousel .carousel-indicators li {
+		display: inline-block;
+		margin: 0px 5px;
+		width: 15px;
+		height: 15px;
+	}
+	#quote-carousel .carousel-indicators li.active {
+		margin: 0px 5px;
+		width: 20px;
+		height: 20px;
+	}
+	
+	img#lady.img-responsive{
+		width: 70%;
+		margin: 32px auto!important;
+		display:none;
+	}
+	img#offerimg {
+		display: block;
+	}
+	h1,
+	.plead,
+	.sub,
+	.ldzlogo,
+	img#cta {
+		text-align: center;
+		margin: 10px auto!important;
+	}
+	/* CONTENT CAROUSEL */
+	#quote-carousel {
+	  margin-bottom: 0;
+	  padding: 0 40px 30px 40px;
+	}
+	h1 {
+		font-size: 30px;
+	}
+	h2#mailtagline{
+		font-size: 29px!important;
+	}
+	
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	
+	div.col-md-4.col-sm-6.center{
+		height: 500px;
+	}
+	h1 {
+		font-size: 20px;
+	}
+	h2#mailtagline{
+		font-size: 23px!important;
+	}
+	
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    
+	
+	
+}

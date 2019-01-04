@@ -1,0 +1,240 @@
+/* CSS Document */
+
+
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * 
+ */
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }
+
+
+
+/*
+	=============================================================
+	HEADER STYLES
+	=============================================================
+*/
+
+
+body {
+  /* Adds space between navbar and content */
+  padding-top: 50px;
+}
+.content-wrap {
+  padding: 40px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+	=============================================================
+	PAGE CONTENT
+	=============================================================
+*/
+
+
+
+#formcontainer {
+	margin-top:30px; 
+	background:#f4f4f4; 
+	padding: 15px;
+	border: 1px solid #ddd;
+}
+#formcontainer:hover {
+	background: #eee!important;
+}
+#searchtitle {
+	font-size: 22px;
+	margin-top: 10px;
+	text-align: right;
+}
+
+
+
+
+#page-content {
+	margin-top: 30px;
+	height: auto!important;
+}
+
+
+
+
+
+img#moviePoster.img-responsive {
+	margin: 0 auto;
+}
+
+#poster {
+	text-align: center!important;
+	
+}
+
+img#posterimg {
+	border: 8px solid #f4f4f4;
+	box-shadow: 3px 2px 5px rgba(0,0,0,0.2);
+	width: 80%;
+	margin-bottom: 20px;
+}
+
+
+ul#mo {
+	list-style:none; 
+	padding: 15px; 
+	display: block;
+	background: #f8f8f8;
+}
+ul#mo>li {
+	/* Movie Output List Items */
+	margin-bottom: 20px;
+}
+
+
+
+#searchResults {
+	height: auto;
+}
+
+.restitle {
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+	=============================================================
+	FOOTER STYLES
+	=============================================================
+*/
+section#page-footer {
+	bottom: 0;
+	width: 100%;
+	background: #007cc2;
+	color: #fff;
+	padding: 0!important;
+	height: 100px;
+}
+#page-footer > .container {
+	padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+	=================================================================================
+	MEDIA QUERIES
+	=================================================================================
+*/
+/****************************** MEDIA QUERIES **************************************/
+
+
+/* Large devices (large desktops, 1199px and up) */
+@media screen and (max-width: 1199px) { 
+	
+	.heading-one {
+		font-size: 40px!important;
+	}
+	.heading-two {
+		font-size: 42px;
+	}
+
+	.heading-three {
+		font-size: 32px;
+	}
+
+	.heading-four {
+		font-size: 25px;
+	}
+
+	.heading-five {
+		font-size: 20px;
+	}
+
+	.heading-six {
+		font-size: 17px;
+	}
+	
+}
+
+/* Medium devices (desktops, 991px - 768px ) */
+@media screen and (min-width: 991) { 
+	
+	
+	
+	
+}
+
+
+/* Small devices (tablets, 767px - 400px) */
+@media screen and (max-width: 767) { 
+	
+	.heading-one {
+		font-size: 40px!important;
+	}
+	.heading-two {
+		font-size: 42px;
+	}
+
+	.heading-three {
+		font-size: 32px;
+	}
+
+	.heading-four {
+		font-size: 25px;
+	}
+
+	.heading-five {
+		font-size: 20px;
+	}
+
+	.heading-six {
+		font-size: 17px;
+	}
+	
+}
+
+
